@@ -1,0 +1,115 @@
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/*----VARIAVEIS------*/
+:root {
+  /*--Cores--*/
+  --first-color: #1f0702f6;
+  --secondary-color: #f3efef;
+  --text-color: #f2fb73;
+  --color-hover: #ee650aea;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+footer {
+  background: var(--first-color);
+  color: var(--text-color);
+  padding: 60px 0;
+  bottom: 0;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+  line-height: 2;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.items {
+  flex-basis: 20%;
+}
+.items .logo {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+.items p {
+  text-transform: capitalize;
+  font-size: 1em;
+  color: var(--text-color);
+  margin: 1.2em 0;
+}
+.items a:hover {
+  color: var(--color-hover);
+}
+.social {
+  display: flex;
+}
+.social a {
+  height: 30px;
+  width: 30px;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  margin: 10px 5px;
+  text-align: center;
+  color: var(--first-color);
+}
+.social a i {
+  font-size: 1.3em;
+  line-height: 30px;
+}
+.social a:hover {
+  background: var(--text-color);
+  color: var(--color-hover);
+}
+.items h3 {
+  position: relative;
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+.items h3::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: -4px;
+  left: 0;
+}
+hr {
+  opacity: 0.6;
+}
+footer .end {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+@media (max-width: 640px) {
+  .items {
+    flex-basis: 80%;
+    margin: auto;
+  }
+}
